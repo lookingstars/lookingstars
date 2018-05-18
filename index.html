@@ -71,8 +71,11 @@
     $(function(){
         $("#audio")[0].play();
     })
+    document.addEventListener("WeixinJSBridgeReady", function () {
+        $("#audio")[0].play();
+    }, false);
     </script>
-<script>
+ <script>
     (function(){
         var canvas = $('#canvas');
 		
