@@ -4,7 +4,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>仰望星空</title>
+<title>SNOW, 生日快乐</title>
 <link type="text/css" rel="stylesheet" href="frodo/default.css">
 <script type="text/javascript" src="frodo/jquery.min.js"></script>
 <script type="text/javascript" src="frodo/jscex.min.js"></script>
@@ -38,5 +38,13 @@
 <div id="main">
   <div class="birthday">SNOW, 生日快乐</div>
 </div>
+<script>
+    $(function(){
+        $("#audio")[0].play();
+    })
+    document.addEventListener("WeixinJSBridgeReady", function () {
+        $("#audio")[0].play();
+    }, false);
+    </script>
 </body>
 </html>
