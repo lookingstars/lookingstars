@@ -1,0 +1,50 @@
+<!-- 源码来自源码之家：http://www.mycodes.net -->
+<!-- 特别鸣谢 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>SNOW, 生日快乐</title>
+<link type="text/css" rel="stylesheet" href="frodo/default.css">
+<script type="text/javascript" src="frodo/jquery.min.js"></script>
+<script type="text/javascript" src="frodo/jscex.min.js"></script>
+<script type="text/javascript" src="frodo/jscex-parser.js"></script>
+<script type="text/javascript" src="frodo/jscex-jit.js"></script>
+<script type="text/javascript" src="frodo/jscex-builderbase.min.js"></script>
+<script type="text/javascript" src="frodo/jscex-async.min.js"></script>
+<script type="text/javascript" src="frodo/jscex-async-powerpack.min.js"></script>
+<script type="text/javascript" src="frodo/functions.js" charset="utf-8"></script>
+<script type="text/javascript" src="frodo/love.js" charset="utf-8"></script>
+<style type="text/css">
+<!--
+.STYLE1 {
+    color: #666666
+}
+.birthday {
+    text-align: center;
+    top: 50%;
+    position: fixed;
+    left: 50%;    
+    font-size: 46px;
+    margin-left: -180px;
+}
+-->
+</style>
+</head>
+<body>
+<audio id="audio" autoplay="autopaly" loop="loop">
+  <source src="frodo.mp3" type="audio/mp3"/>
+</audio>
+<div id="main">
+  <div class="birthday">SNOW, 生日快乐</div>
+</div>
+<script>
+    $(function(){
+        $("#audio")[0].play();
+    })
+    document.addEventListener("WeixinJSBridgeReady", function () {
+        $("#audio")[0].play();
+    }, false);
+    </script>
+</body>
+</html>
